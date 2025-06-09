@@ -16,6 +16,13 @@ export type Customer = {
   image_url: string;
 };
 
+export type CardData = {
+  numberOfInvoices: number;
+  numberOfCustomers: number;
+  totalPaidInvoices: string;
+  totalPendingInvoices: string;
+};
+
 export type Invoice = {
   id: string;
   customer_id: string;
