@@ -14,13 +14,11 @@ export default function Header() {
           />
         </div>
       </Link>
-      <div className="relative h-12 aspect-[631/211] hidden md:block">
-        <Image
-          src="/OMP_logo_rsz-removebg.png"
-          alt="Logo"
-          fill
-          className="object-contain"
-        />
+      <div className="relative w-auto flex flex-row items-center gap-2">
+        <div className="relative px-4 py-2 bg-brand-main hover:bg-brand-hover rounded-xl text-white">
+          Fai cose
+        </div>
+        <div className=" relative w-12 h-12 rounded-full bg-gray-user" />
       </div>
     </div>
   )

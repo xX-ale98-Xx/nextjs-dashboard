@@ -5,7 +5,7 @@ import { signOut } from '@/auth';
 
 export default function SideNav() {
   return (
-    <div className="flex h-full flex-col px-3 py-4 border-r border-gray-border md:px-4 md:py-6">
+    <div className="flex h-full flex-col px-3 py-4 md:border-r border-gray-border md:px-4 md:py-6">
       <h1 className={`font-semibold mb-4 text-xl hidden md:text-2xl md:block`}>
         Dashboard
       </h1> 
@@ -16,7 +16,7 @@ export default function SideNav() {
           'use server';
           await signOut({ redirectTo: '/'});
         }}>
-          <button className="flex h-[48px] w-full grow items-center justify-center gap-2 rounded-md bg-gray-50 p-3 text-sm font-medium hover:bg-sky-100 hover:text-blue-600 md:flex-none md:justify-start md:p-2 md:px-3">
+          <button className="flex h-[48px] w-full grow items-center justify-center gap-2 rounded-md bg-gray-50 p-3 text-sm font-medium hover:bg-brand-background md:flex-none md:justify-start md:p-2 md:px-3">
             <PowerIcon className="w-6" />
             <div className="hidden md:block">Sign Out</div>
           </button>

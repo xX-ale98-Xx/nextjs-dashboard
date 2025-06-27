@@ -15,12 +15,15 @@ const config: Config = {
         brand: {
           main: '#109C90',
           hover: '#2AE9D9',
+          background: '#2AE9D940'
         },
         black: {
           text: '#171D1C',
         },
         gray:{
           border: '#E0E0E0',
+          background: '#82828221',
+          user: '#82828240',
         },
         blue: {
           400: '#2589FE',
