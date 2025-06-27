@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   description: 'OMP è la nuova piattaforma online che aiuta i professionisti della riabilitazione muscolo-scheletrica.',
   metadataBase: new URL('https://next-learn-dashboard.vercel.sh'),
 openGraph: {
-    title: 'OMP! Dashboard',
+    title: 'OMP! - OhMyPhysio',
     description: 'OMP è la nuova piattaforma online che aiuta i professionisti della riabilitazione muscolo-scheletrica.',
     url: 'https://next-learn-dashboard.vercel.sh',
     siteName: 'OMP! - OhMyPhysio',
