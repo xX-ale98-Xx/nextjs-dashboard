@@ -14,7 +14,7 @@ export const metadata: Metadata = {
 export default async function Page() {
 
   return (
-    <main className='bg-white border border-gray-border rounded-2xl p-6'>
+    <main className='bg-white'>
       <h1 className={`font-semibold mb-4 text-xl md:text-2xl`}>
         Home
       </h1>

@@ -3,13 +3,13 @@ import Header from '@/app/ui/dashboard/header';
  
 export default function Layout({ children }: { children: React.ReactNode }) {
   return (
-    <div className="min-h-screen h-screen overflow-hidden flex flex-col">
+    <div className="h-screen flex flex-col overflow-hidden">
       <Header />
-      <div className="flex flex-1 flex-col md:flex-row md:overflow-hidden">
+      <div className="flex flex-1 flex-col md:flex-row overflow-hidden">
         <div className="w-full flex-none md:w-64">
           <SideNav />
         </div>
-        <div className="flex-1 px-6 py-4 bg-gray-100 md:overflow-y-auto md:px-4 md:py-4">{children}</div>
+        <div className="flex-1 overflow-y-auto px-6 py-4 md:px-4 md:py-4">{children}</div>
       </div>
     </div>
   );
