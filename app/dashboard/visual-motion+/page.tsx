@@ -6,7 +6,10 @@ export const metadata: Metadata = {
 
 export default function Page() {
   return (
-    <main className='flex flex-col h-full bg-white border border-gray-border rounded-2xl overflow-hidden'>
+    <main className='flex flex-col h-full overflow-hidden'>
+      <h1 className={`font-semibold mb-4 text-xl md:text-2xl`}>
+        VisualMotion+®
+      </h1>
 
       {/* Top bar: Titolo e descrizione */}
       <div className='flex flex-col md:flex-row items-start md:items-center justify-between px-6 py-4 border-b bg-gray-50'>

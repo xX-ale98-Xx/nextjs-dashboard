@@ -13,9 +13,16 @@ const config: Config = {
       },
       colors: {
         brand: {
-          main: '#109C90',
           hover: '#2AE9D9',
-          background: '#2AE9D940'
+          100: '#E1F5F3',
+          200: '#B4E5E0',
+          300: '#7ED6CB',
+          400: '#44C3B4',
+          main: '#109C90',
+          600: '#0D8A80',
+          700: '#0A726A',
+          800: '#075C56',
+          900: '#044240',
         },
         black: {
           text: '#171D1C',

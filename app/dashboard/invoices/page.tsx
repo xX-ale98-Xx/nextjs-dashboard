@@ -26,7 +26,7 @@ export default async function Page(props: {
   const totalPages = await fetchInvoicesPages(query);
 
   return (
-    <main className="h-full flex flex-col">
+    <main className="flex flex-col flex-1 bg-green-100 mb-6 md:mb-0">
       <div className="flex items-center justify-between">
         <h1 className={`font-semibold text-xl md:text-2xl`}>Fatture</h1>
       </div>
