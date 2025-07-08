@@ -22,7 +22,7 @@ const links = [
   { name: 'Home', href: '/dashboard', icon: HomeIcon },
   { name: 'Fatture', href: '/dashboard/invoices',  icon: DocumentDuplicateIcon },
   { name: 'Pazienti', href: '/dashboard/pazienti', icon: UserGroupIcon },
-  { name: 'VisualMotion+', href: '/dashboard/visual-motion+', icon: CameraIcon },
+  { name: 'VisualMotion+', href: '/dashboard/visual-motion', icon: CameraIcon },
   { name: 'Calendario', href: '/dashboard/calendar', icon: CalendarIcon },
   { name: 'Chat', href: '/dashboard/chat', icon: ChatBubbleLeftRightIcon },
   { name: 'Incassi', href: '/dashboard/earnings', icon: CurrencyDollarIcon },
