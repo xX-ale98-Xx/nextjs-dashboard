@@ -1,4 +1,5 @@
 import { Metadata } from 'next';
+import InfoDialog from '@/app/ui/visual-motion/popup';
 
 export const metadata: Metadata = {
   title: 'VisualMotion+',
@@ -7,17 +8,13 @@ export const metadata: Metadata = {
 export default function Page() {
   return (
     <main className='flex flex-col h-full overflow-hidden'>
-      <h1 className={`font-semibold mb-4 text-xl md:text-2xl`}>
-        VisualMotion+®
-      </h1>
-
-      {/* Top bar: Titolo e descrizione */}
-      <div className='flex flex-col md:flex-row items-start md:items-center justify-between px-6 py-4 border-b bg-gray-50'>
-        <h1 className='text-xl font-semibold text-gray-800'>VisualMotion+®</h1>
-        <p className='text-sm text-gray-600 max-w-3xl mt-2 md:mt-0'>
-          Utilizza VisualMotion+ durante l’anamnesi o la valutazione dei pazienti per monitorare con precisione il loro range di movimento (ROM). Salva i dati e tienine traccia direttamente nella loro scheda clinica.
-        </p>
+      <div className='flex items-center gap-8'>
+        <h1 className={`font-semibold text-xl md:text-2xl`}>
+          VisualMotion+
+        </h1>
+        <InfoDialog />
       </div>
+      
 
       {/* Contenuto principale: griglia a due colonne */}
       <div className='flex flex-1 flex-row overflow-hidden'>

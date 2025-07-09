@@ -2,11 +2,13 @@
 
 import * as React from 'react';
 import Button from '@mui/material/Button';
+import { IconButton } from "@mui/material";
 import Dialog from '@mui/material/Dialog';
 import DialogActions from '@mui/material/DialogActions';
 import DialogContent from '@mui/material/DialogContent';
 import DialogContentText from '@mui/material/DialogContentText';
 import DialogTitle from '@mui/material/DialogTitle';
+import {InformationCircleIcon} from '@heroicons/react/24/outline';
 
 export default function VisMotInfoDialog() {
   const [open, setOpen] = React.useState(false);
@@ -21,9 +23,9 @@ export default function VisMotInfoDialog() {
 
   return (
     <React.Fragment>
-      <Button variant="outlined" onClick={handleClickOpen}>
-        Open alert dialog
-      </Button>
+      <IconButton onClick={handleClickOpen} sx={{padding: 0}}>
+        <InformationCircleIcon className="w-7 text-brand-main" />  
+      </IconButton>
       <Dialog
         open={open}
         onClose={handleClose}
@@ -31,18 +33,16 @@ export default function VisMotInfoDialog() {
         aria-describedby="alert-dialog-description"
       >
         <DialogTitle id="alert-dialog-title">
-          {"Use Google's location service?"}
+          {"Visual Motion +"}
         </DialogTitle>
         <DialogContent>
           <DialogContentText id="alert-dialog-description">
-            Let Google help apps determine location. This means sending anonymous
-            location data to Google, even when no apps are running.
+            Utilizza VisualMotion+ durante l’anamnesi o la valutazione dei pazienti per monitorare con precisione il loro range di movimento (ROM). Salva i dati e tienine traccia direttamente nella loro scheda clinica.
           </DialogContentText>
         </DialogContent>
         <DialogActions>
-          <Button onClick={handleClose}>Disagree</Button>
           <Button onClick={handleClose} autoFocus>
-            Agree
+            Ho capito
           </Button>
         </DialogActions>
       </Dialog>

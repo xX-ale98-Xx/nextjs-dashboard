@@ -1,6 +1,7 @@
 import { Metadata } from 'next';
 import InfoDialog from '@/app/ui/visual-motion/popup';
 
+
  
 export const metadata: Metadata = {
   title: 'Calendar',
