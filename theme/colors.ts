@@ -13,6 +13,17 @@ export const colors = {
     800: '#075C56',
     900: '#044240',
   },
+  teal: {
+    100: '#D0FCF8',  // molto chiaro
+    200: '#A6F8F0',
+    300: '#7BF3E7',
+    400: '#50EFDF',
+    500: '#2AE9D9',  // colore di partenza
+    600: '#22BBAF',
+    700: '#1A8D85',
+    800: '#12615C',
+    900: '#0B3734',  // molto scuro
+  },
   black: {
     text: '#171D1C',
   },

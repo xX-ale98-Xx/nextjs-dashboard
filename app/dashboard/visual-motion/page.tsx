@@ -1,5 +1,7 @@
 import { Metadata } from 'next';
 import InfoDialog from '@/app/ui/visual-motion/popup';
+import PatientCard from '@/app/ui/visual-motion/PatientCard';
+import VideoElement from '@/app/ui/visual-motion/VideoElement';
 
 export const metadata: Metadata = {
   title: 'VisualMotion+',
@@ -8,7 +10,7 @@ export const metadata: Metadata = {
 export default function Page() {
   return (
     <main className='flex flex-col h-full overflow-hidden'>
-      <div className='flex items-center gap-8'>
+      <div className='flex mb-4 items-center gap-8'>
         <h1 className={`font-semibold text-xl md:text-2xl`}>
           VisualMotion+
         </h1>
@@ -17,11 +19,14 @@ export default function Page() {
       
 
       {/* Contenuto principale: griglia a due colonne */}
-      <div className='flex flex-1 flex-row overflow-hidden'>
+      <div className='flex flex-1 flex-col md:flex-row overflow-hidden'>
 
-        {/* Colonna sinistra: info paziente */}
+        <PatientCard />
+        <VideoElement />
+ 
+        {/*
         <aside className='w-full md:w-1/3 p-6 border-r bg-white'>
-          {/* Placeholder per scheda paziente */}
+          
           <div className='bg-gray-100 rounded-xl p-4 text-center'>
             <div className='w-20 h-20 bg-gray-300 rounded-full mx-auto mb-4'></div>
             <h2 className='text-lg font-semibold'>Giovanni Bianchi</h2>
@@ -31,15 +36,15 @@ export default function Page() {
           </div>
         </aside>
 
-        {/* Colonna destra: video + controlli */}
+        
         <section className='w-full md:w-2/3 p-6 flex flex-col items-center justify-center gap-6'>
 
-          {/* Video o immagine */}
+         
           <div className='w-full aspect-video bg-black rounded-xl shadow-md flex items-center justify-center text-white text-lg'>
             Video ROM
           </div>
 
-          {/* Controlli */}
+          
           <div className='flex flex-col md:flex-row items-center justify-between w-full gap-4'>
             <div className='text-center'>
               <p className='text-gray-500 text-sm'>ROM Attuale</p>
@@ -57,6 +62,8 @@ export default function Page() {
           </div>
 
         </section>
+        */}
+        
       </div>
     </main>
   );
