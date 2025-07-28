@@ -3,9 +3,16 @@
 import React, { useRef, useState, useEffect } from 'react';
 import Webcam from 'react-webcam';
 
+type VideoConstraints = {
+  width: number;
+  height: number;
+  aspectRatio: number;
+  facingMode: string;
+};
+
 export default function PoseDetector() {
   const containerRef = useRef<HTMLDivElement>(null);
-  const [videoConstraints, setVideoConstraints] = useState<any>(null);
+  const [videoConstraints, setVideoConstraints] = useState<VideoConstraints | null>(null);
 
   useEffect(() => {
     const updateConstraints = () => {
