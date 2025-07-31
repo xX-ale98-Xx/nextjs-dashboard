@@ -150,7 +150,7 @@ export default function PoseDetector() {
         
         // Load MoveNet model from TensorFlow Hub
         console.log('Loading MoveNet model...');
-        const modelUrl = 'https://tfhub.dev/google/tfjs-model/movenet/singlepose/lightning/4';
+        const modelUrl = 'https://tfhub.dev/google/tfjs-model/movenet/singlepose/thunder/4';
         const model = await tf.loadGraphModel(modelUrl, { fromTFHub: true });
         
         setDetector(model);
@@ -190,7 +190,7 @@ export default function PoseDetector() {
       const imageTensor = tf.browser.fromPixels(video);
       
       // Resize to 192x192 (MoveNet input requirement)
-      const resized = tf.image.resizeBilinear(imageTensor, [192, 192]);
+      const resized = tf.image.resizeBilinear(imageTensor, [256, 256]);
       
       // Convert to int32 and normalize to 0-255 range
       const int32Tensor = tf.cast(resized, 'int32');
@@ -442,7 +442,7 @@ export default function PoseDetector() {
               <p>Confident keypoints: {poses[0]?.keypoints?.filter((kp: Keypoint) => kp.confidence > 0.3).length || 0}</p>
             </div>
             <div>
-              <p>Input size: 192×192</p>
+              <p>Input size: 256x256</p>
               <p>Output format: [1,1,17,3]</p>
             </div>
             <div>
