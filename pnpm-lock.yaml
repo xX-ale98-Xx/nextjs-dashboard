@@ -17,9 +17,6 @@ importers:
       '@heroicons/react':
         specifier: ^2.2.0
         version: 2.2.0(react@19.1.0)
-      '@mediapipe/pose':
-        specifier: ^0.5.1675469404
-        version: 0.5.1675469404
       '@mui/material':
         specifier: ^7.2.0
         version: 7.2.0(@emotion/react@11.14.0(@types/react@19.0.7)(react@19.1.0))(@emotion/styled@11.14.1(@emotion/react@11.14.0(@types/react@19.0.7)(react@19.1.0))(@types/react@19.0.7)(react@19.1.0))(@types/react@19.0.7)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
