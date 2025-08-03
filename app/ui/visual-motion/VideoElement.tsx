@@ -1,11 +1,19 @@
 
-import PoseDetect from '@/app/ui/visual-motion/poseDetec';
+'use client';
 
-export default async function VideoElement(){
+import dynamic from 'next/dynamic';
 
-  return(
-    <div className='h-full w-full bg-green-100 rounded-md'>
+// Lazy load del componente PoseDetect
+const PoseDetect = dynamic(() => import('@/app/ui/visual-motion/poseDetec'), {
+  ssr: false,
+  loading: () => <p className="text-center p-4">Caricamento componente...</p>,
+});
+
+export default function VideoElement() {
+  return (
+    <div className="h-full w-full bg-brand-100 rounded-md">
       <PoseDetect />
     </div>
-  )
+  );
 }
+
